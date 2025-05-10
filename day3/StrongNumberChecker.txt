@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class StrongNumberChecker {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number to check if it's a Strong number: ");
+        int number = scanner.nextInt();
+        int original = number;
+        int sum = 0;
+
+        while (number > 0) {
+            int digit = number % 10;
+
+            // Compute factorial inline
+            int fact = 1;
+            for (int i = 2; i <= digit; i++) {
+                fact *= i;
+            }
+
+            sum += fact;
+            number /= 10;
+        }
+
+        if (sum == original) {
+            System.out.println(original + " is a Strong number.");
+        } else {
+            System.out.println(original + " is NOT a Strong number.");
+        }
+
+        scanner.close();
+    }
+}
