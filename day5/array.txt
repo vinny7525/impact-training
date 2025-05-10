@@ -1,0 +1,97 @@
+//import java.util.*;
+//public class array{ 
+  //  public static void main(String[] args) {
+    //    Scanner sc=new Scanner(System.in);
+      // System.out.print("Enter the size of arry:");
+        //int n=sc.nextInt();
+        //int arr[]=new int[n];
+        //for(int i=0;i<n;i++){
+          //  arr[i]=sc.nextInt();
+             
+        //}
+        //System.out.println("Even numbers in array are:");
+         //for(int j=0;j<n;j++){
+           // if(arr[j]%2==0){
+             //   System.out.println(arr[j]);
+            //}
+             
+        //}
+        
+    //}
+//}
+
+
+//import java.util.*;
+//public class array{ 
+  //  public static void main(String[] args) {
+    //    Scanner sc=new Scanner(System.in);
+     //  System.out.print("Enter the size of arry:");
+       // int n=sc.nextInt();
+        //int arr[]=new int[n];
+        //for(int i=0;i<n;i++){
+          //  arr[i]=sc.nextInt();
+             
+        //}
+         //for(int j=0;j<n;j++){
+             //   System.out.println(arr[j]);
+             
+        //}
+        
+    //}
+//}
+
+
+//import java.util.*;
+//public class array{ 
+  //  public static void main(String[] args) {
+    //    Scanner sc=new Scanner(System.in);
+      // System.out.print("Enter the size of arry1:");
+        //int m=sc.nextInt();
+        //System.out.print("Enter the size of arry2:");
+        //int n=sc.nextInt();
+        //int arr1[]=new int[m];
+        //int arr2[]=new int[n];
+        //int s=0,s1=0;
+        // System.out.println("Array1:");
+        //for(int i=0;i<m;i++){
+          //  arr1[i]=sc.nextInt();
+            // s+=arr1[i];
+            
+        //}
+         //System.out.println("Array2:");
+        //for(int i=0;i<n;i++){
+          //  arr2[i]=sc.nextInt();
+            //s1+=arr2[i];
+             
+        //}
+        //if(m==n && s==s1){
+          //      System.out.println("Same");
+        ////}else{
+            //System.out.println("not same");
+        //}
+        //sc.close();
+    //}
+//}
+
+import java.util.*;
+public class array{ 
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       System.out.print("Enter the size of arry1:");
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        int s=1;
+         System.out.println("Array:");
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+            
+            
+        }
+        s=s+arr[0];
+         for(int j=0;j<n;j++){
+          s=s-arr[j];
+        }
+        System.out.println(s);
+        
+    }
+}
