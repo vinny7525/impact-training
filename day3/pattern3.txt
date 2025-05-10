@@ -1,0 +1,17 @@
+public class pattern3{
+    public static void main(String[] args) {
+        int rows = 4; // Number of rows
+
+        for (int i = rows; i >= 1; i--) {
+            // Print spaces
+            for (int j = 0; j < rows - i; j++) {
+                System.out.print(" ");
+            }
+            // Print asterisks
+            for (int k = 0; k < i; k++) {
+                System.out.print("*");
+            }
+            System.out.println(); // Move to next line
+        }
+    }
+}
