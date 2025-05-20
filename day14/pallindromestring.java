@@ -12,7 +12,7 @@ public class string3 {
         for(int i=s.length()-1;i>=0;i--){
             pallindrome+=s.charAt(i);
         }
-        if(s.equals(pallindrome)){
+        if(s.compareToIgnoreCase(pallindrome) == 0){
             System.out.println("The string is a palindrome");
         }
         else{
